@@ -29,7 +29,7 @@ data2$Sub_metering_3 <- as.numeric(as.character(data2$Sub_metering_3))
 ### Now we make the THIRD plot and save it
 ### --------------------------------------------------------------------------###
 
-png("/Users/Mario/ExData_Plotting1/figureMySubmission/plot3.png", width=480, height=480)
+png("/Users/Mario/ExData_Plotting1/plot3.png", width=480, height=480)
 
 ## Add the first set of points, Sub_metering_1, and put in the x and y axis labels
 plot(x=data2$DateTime,

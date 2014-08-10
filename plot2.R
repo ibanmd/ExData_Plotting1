@@ -29,7 +29,7 @@ data2$Sub_metering_3 <- as.numeric(as.character(data2$Sub_metering_3))
 ### Now we make the SECOND plot and save it
 ### --------------------------------------------------------------------------###
 
-png("/Users/Mario/ExData_Plotting1/figureMySubmission/plot2.png", width=480, height=480)
+png("/Users/Mario/ExData_Plotting1/plot2.png", width=480, height=480)
 
 plot(x=data2$DateTime, 
      y=data2$Global_active_power, 

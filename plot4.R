@@ -29,11 +29,11 @@ data2$Sub_metering_3 <- as.numeric(as.character(data2$Sub_metering_3))
 ### Now we make the FOURTH plot and save it
 ### --------------------------------------------------------------------------###
 
-png("/Users/Mario/ExData_Plotting1/figureMySubmission/plot4.png", width=480, height=480)
+png("/Users/Mario/ExData_Plotting1/plot4.png", width=480, height=480)
 
 par(mfrow=c(2,2))
 
-## Plot 1
+## Plot A
 ## ---------------------------------------------------------------------------------
 plot(x=data2$DateTime, 
      y=data2$Global_active_power, 
@@ -44,7 +44,7 @@ plot(x=data2$DateTime,
      cex.lab=1)
 ## ---------------------------------------------------------------------------------
 
-## Plot 2
+## Plot B
 ## ---------------------------------------------------------------------------------
 plot(x=data2$DateTime,
      y=data2$Voltage,
@@ -55,7 +55,7 @@ plot(x=data2$DateTime,
 
 ## ---------------------------------------------------------------------------------
 
-## Plot 3
+## Plot C
 ## ---------------------------------------------------------------------------------
 ## Add the first set of points, Sub_metering_1, and put in the x and y axis labels
 plot(x=data2$DateTime,
@@ -86,7 +86,7 @@ legend("topright",
        cex=1)
 ## ---------------------------------------------------------------------------------
 
-## Plot 4
+## Plot D
 ## ---------------------------------------------------------------------------------
 plot(x=data2$DateTime,
      y=data2$Global_reactive_power,
