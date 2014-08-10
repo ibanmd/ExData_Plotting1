@@ -1,7 +1,9 @@
 # Welcome to my first assignment in Exploratory Data Analysis
 Each of the plot.R files contain all the code for reading in the data.
 At the end of each of these files, the respective code is found for making the respective plot.
-For example, plot1.R contains the code for reading in the data and making plot1.png.  plot2.R also reads in the data but instead makes plot2.png.    
+For example, plot1.R contains the code for reading in the data and making plot1.png.  plot2.R also reads in the data but instead makes plot2.png.     
+
+**Note, I had to "update" the original example folder called “figure” because I wanted to change the folder's name to “figure(Original)”, but then had to change it back to the original name "figure" so that that the README.md file would display the plots.  Otherwise, there would be no reason why the folder “figure” should be updated.
 
 
 ## Introduction
