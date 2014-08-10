@@ -1,3 +1,10 @@
+# Welcome to my first assignment in Exploratory Data Analysis
+You can easily find the 4 plot.R files.  Each of these contains all the code for reading in the data.
+At the end of each of these files, the respective code is found for making the respective plot.
+For example, plot1.R contains the code for reading in the data and making plot1.png.  plot2.R also reads in the data but instead makes plot2.png.    
+
+My 4 .png files can be found in the folder called "figureMySubmission".  This is to differentiate it from the orignal example folder called "figure".
+
 ## Introduction
 
 This assignment uses data from
