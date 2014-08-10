@@ -1,3 +1,7 @@
+## Data can be found at this link, was originally accessed on August 10, 2014
+## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+## File was then unzipped on the desktop
+
 ## Read data into R
 data <- read.table("/Users/Mario/Desktop/household_power_consumption.txt",sep=";",header=TRUE)
 

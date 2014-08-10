@@ -1,3 +1,7 @@
+## Data can be found at this link, was originally accessed on August 10, 2014
+## https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+## File was then unzipped on the desktop
+
 ## Read data into R
 data <- read.table("/Users/Mario/Desktop/household_power_consumption.txt",sep=";",header=TRUE)
 
@@ -26,5 +30,71 @@ data2$Sub_metering_3 <- as.numeric(as.character(data2$Sub_metering_3))
 ### --------------------------------------------------------------------------###
 
 png("/Users/Mario/ExData_Plotting1/figureMySubmission/plot4.png", width=480, height=480)
+
+par(mfrow=c(2,2))
+
+## Plot 1
+## ---------------------------------------------------------------------------------
+plot(x=data2$DateTime, 
+     y=data2$Global_active_power, 
+     type="l", 
+     ylab="Global Active Power", 
+     xlab="",
+     lwd=1.25, ## Make a little thicker
+     cex.lab=1)
+## ---------------------------------------------------------------------------------
+
+## Plot 2
+## ---------------------------------------------------------------------------------
+plot(x=data2$DateTime,
+     y=data2$Voltage,
+     xlab="datetime",
+     ylab="Voltage",
+     type="l",
+     lwd=1.25) ## make lines a tad thicker
+
+## ---------------------------------------------------------------------------------
+
+## Plot 3
+## ---------------------------------------------------------------------------------
+## Add the first set of points, Sub_metering_1, and put in the x and y axis labels
+plot(x=data2$DateTime,
+     y=data2$Sub_metering_1,
+     type="l",
+     col="black",
+     xlab="",
+     ylab="Energy sub metering")
+
+## Add in the second set of points, Sub_metering_2
+points(x=data2$DateTime,
+       y=data2$Sub_metering_2,
+       type="l",
+       col="red")
+
+## Add in the third set of points, Sub_metering_3
+points(x=data2$DateTime,
+       y=data2$Sub_metering_3,
+       type="l",
+       col="blue")
+
+## Add legend
+legend("topright", 
+       col=c("black","red","blue"),
+       legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
+       lwd=c(2,2,2), ## make it a little darker so it looks better
+       bty="n", ## Remove that border!!! 
+       cex=1)
+## ---------------------------------------------------------------------------------
+
+## Plot 4
+## ---------------------------------------------------------------------------------
+plot(x=data2$DateTime,
+     y=data2$Global_reactive_power,
+     xlab="datetime",
+     ylab="Global_reactive_power",
+     type="l",
+     lwd=1.2, ## Make lines a little thicker
+     cex=.1)
+## ---------------------------------------------------------------------------------
 
 dev.off()
